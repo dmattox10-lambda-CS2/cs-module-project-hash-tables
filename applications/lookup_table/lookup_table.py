@@ -27,7 +27,7 @@ def slowfun(x, y):
 
     if (y, x) in cache:
 
-        return cache[(y,x)]
+        return cache[(y, x)]
 
     else:
         v = math.pow(x, y)
@@ -45,3 +45,4 @@ for i in range(50000):
     x = random.randrange(2, 14)
     y = random.randrange(3, 6)
     print(f'{i}: {x},{y}: {slowfun(x, y)}')
+    print(cache)

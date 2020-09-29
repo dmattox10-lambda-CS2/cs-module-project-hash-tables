@@ -9,3 +9,7 @@ words removed.
 There must be no extra spaces at the end of your returned string.
 
 The solution must be `O(n)`.
+
+Split on space
+write each word to list as keys
+ouput keys
