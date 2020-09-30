@@ -91,3 +91,9 @@ s = sorted(x) # sorted by key
 
 for i in items:
 print(f'{i[0]}: {i[1]}') # key: val per line O(n)
+
+# by value
+def sort_by(t):
+return t[1]
+
+items.sort(key=sort_by)
