@@ -1,12 +1,12 @@
 
 no = ["\"", ":", ";", ",", ".", "-", "+", "=", "/", "\\",
-      "|", "[", "]", "{", "}", "(", ")", "*", "^", "&", "", "\r", "\n", "\t"]
+      "|", "[", "]", "{", "}", "(", ")", "*", "^", "&", ""]
 
 
 def word_count(s):
     # Your code here
     cache = {}
-    for word in s.split(' '):
+    for word in s.split():
         word = word.lower()
         new_word = ''
         characters = [char for char in word]

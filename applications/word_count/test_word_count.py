@@ -24,9 +24,8 @@ class TestWordCount(unittest.TestCase):
         x = word_count('":;,.-+=/\\|[]{}()*^&')
         self.assertTrue(x == {})
 
-        # This test is BS. This is a word count not a letter count, I don't care about this garbage input!
-        # x = word_count('a a\ra\na\ta \t\r\n')
-        # self.assertTrue(x == {"a": 5})
+        x = word_count('a a\ra\na\ta \t\r\n')
+        self.assertTrue(x == {"a": 5})
 
 
 if __name__ == '__main__':
