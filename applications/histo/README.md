@@ -78,3 +78,16 @@ arfgrq oenprf, yvxr fb `{k:{l}}`
 
 (The hints are encrypted with ROT13. Google for `rot13 decoder` to see
 them.)
+
+d = {
+    ...list
+}
+
+d.items() prints
+
+x = list(d.items()) = [(key1, val1), (key2, val2)]
+
+s = sorted(x) # sorted by key
+
+for i in items:
+print(f'{i[0]}: {i[1]}') # key: val per line O(n)
